@@ -1,0 +1,37 @@
+"#index": {
+	backgroundColor:"white",
+	layout: "vertical"
+}
+
+"#logo": {
+	image: "/StudioLogo.png",
+	width: "90%",
+	left: "5%"
+}
+
+"#question": {
+	text: "Qual é o teu nome?",
+	font:{
+		fontFamily:"Arial",
+		fontSize: "24"
+	},
+	top: "5%",
+	color: "black"
+}
+
+"#nameInput": {
+	hintText: "Introduz o teu nome",
+	width: "90%",
+	height: Ti.UI.SIZE,
+	borderWidth: "5px",
+	borderRadius: "2px",
+	top: "5%"
+}
+
+"#nextPage": {
+	top: "5%",
+	title: "Avançar",
+	borderWidth: "5px",
+	borderRadius: "2px"
+}
+

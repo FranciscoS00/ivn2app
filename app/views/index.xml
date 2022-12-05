@@ -1,0 +1,8 @@
+<Alloy>
+	<Window id="index">
+		<ImageView id="logo"></ImageView>
+		<Label id="question"></Label>
+		<TextField id="nameInput"></TextField>
+		<Button id="nextPage"></Button>
+	</Window>
+</Alloy>
