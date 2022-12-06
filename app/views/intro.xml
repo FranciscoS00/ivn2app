@@ -1,0 +1,6 @@
+<Alloy>
+	<Window id="intro">
+		<VideoPlayer id="video"/>
+		<Button id="nextPage" class="fontClass"></Button>
+	</Window>
+</Alloy>

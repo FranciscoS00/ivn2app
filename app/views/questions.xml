@@ -1,0 +1,7 @@
+<Alloy>
+	<Window id="questions">
+		<ScrollView id="chat"></ScrollView>
+		<Button id="question1">teste1teste1 teste1 teste1 teste1teste1 teste1 teste1 teste1 teste1 teste1teste1teste1teste1  teste1teste1   teste1teste1  teste1 teste1 teste1 teste1 teste1</Button>
+		<Button id="question2">teste2</Button>
+	</Window>
+</Alloy>

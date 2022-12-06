@@ -1,0 +1,33 @@
+"#questions": {
+    layout: "composite"	
+}
+
+"#chat": {
+    top: "5%",
+    bottom: "30%",
+    width: "100%",
+    height: Ti.UI.SIZE,
+    layout: "vertical"	
+}
+
+"#question1": {
+	bottom: "20%",
+	borderWidth: "5px",
+	borderRadius: "50px",
+	height: Ti.UI.SIZE,
+    font:{
+        fontFamily: "Arial",
+        fontSize: 40
+    }
+}
+
+"#question2": {
+	bottom: "10%",
+	borderWidth: "5px",
+	borderRadius: "50px",
+	height: Ti.UI.SIZE,
+    font:{
+        fontFamily: "Arial",
+        fontSize: 40
+    }
+}
