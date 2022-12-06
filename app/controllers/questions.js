@@ -36,7 +36,8 @@ $.question2.addEventListener("click", function(e){
 
 function makeChanges(){
     //change questions on buttons and add the questions already made into an array to track what is missing
-    $.chat.scrollToBottom();
+    //$.chat.scrollToBottom();
+    Alloy.createController("postExp").getView().open();
 }
 
 //ToDo: after a certain number of questions are made change the button to next to open the postExp page

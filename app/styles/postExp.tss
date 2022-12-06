@@ -1,0 +1,23 @@
+"#postExp": {
+    layout: "vertical"	
+}
+
+"#title": {
+    top: "5%",
+    textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+    font:{
+		fontFamily: "Arial",
+		fontSize: 40
+	}	
+}
+
+".button": {
+    top: "5%",
+	borderWidth: "5px",
+	borderRadius: "50px",
+	height: Ti.UI.SIZE,
+    font:{
+		fontFamily: "Arial",
+		fontSize: 40
+	}	
+}

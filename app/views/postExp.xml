@@ -1,5 +1,8 @@
 <Alloy>
 	<Window id="postExp">
-
+		<Label id="title">Se já me ajudaste partilha fotos da tua experiencia e dá scan no código QR que encontraste</Label>
+		<Button id="scan" class="button">Scan</Button>
+		<Button id="gallery" class="button">Partilhar experiência</Button>
+		<ImageView id="teste" height="100" width="100"></ImageView>
 	</Window>
 </Alloy>
