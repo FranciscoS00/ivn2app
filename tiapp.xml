@@ -51,6 +51,7 @@
 		</manifest>
 	</android>
 	<modules>
+        <module platform="android">ti.barcode</module>
 	</modules>
 	<deployment-targets>
 		<target device="android">true</target>

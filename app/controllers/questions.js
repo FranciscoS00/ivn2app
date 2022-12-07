@@ -33,7 +33,8 @@ $.question1.addEventListener("click", function(e){
     });
     sizeView.add(answer);
     $.chat.add(sizeView);
-    makeChanges($.question1.title);
+    Alloy.createController("postExp").getView().open(); //remove on last
+    //makeChanges($.question1.title); uncomment on last
 })
 
 $.question2.addEventListener("click", function(e){
@@ -61,7 +62,8 @@ $.question2.addEventListener("click", function(e){
     });
     sizeView.add(answer);
     $.chat.add(sizeView);
-    makeChanges($.question2.title);
+    Alloy.createController("postExp").getView().open(); //remove on last
+    //makeChanges($.question2.title);  uncomment on last
 })
 
 function makeChanges(question){
