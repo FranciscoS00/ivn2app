@@ -1,6 +1,8 @@
 $.postExp.open();
 
+const http = require("http");
 const Barcode = require('ti.barcode');
+const ImagePicker = require("ti.imagepicker");
 Barcode.allowRotation = true;
 Barcode.displayedMessage = ' ';
 Barcode.allowMenu = false;
@@ -14,7 +16,6 @@ $.gallery.addEventListener('click', function(){
     Ti.Media.openPhotoGallery({
         mediaTypes: [ Titanium.Media.MEDIA_TYPE_PHOTO ],
         success: function (e) {
-            //this has to send to the api and give some feedback that it was sent
             $.teste.image = e.media;
         },
         error: function (e) {
@@ -22,6 +23,10 @@ $.gallery.addEventListener('click', function(){
         }
     });
 });
+
+function callback(){
+	console.log("sending images");
+}
 
 //scan the qr code
 
@@ -89,7 +94,7 @@ $.scan.addEventListener('click', function () {
 			overlay: overlay,
 			showCancel: false,
 			showRectangle: false,
-			keepOpen: true,
+			keepOpen: false,
 			acceptedFormats: [
 				Barcode.FORMAT_QR_CODE
 			]
@@ -115,7 +120,8 @@ Barcode.addEventListener('cancel', function (e) {
 });
 
 Barcode.addEventListener('success', function (e) {
-	Ti.API.info('Success called with barcode: ' + e.result);
-	console.log('Sucess with: ' + e);
+	if(e.result == "https://www.uma.pt/"){
+		Alloy.createController("scan").getView().open();
+	}
 });
 

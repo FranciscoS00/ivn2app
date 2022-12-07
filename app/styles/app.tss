@@ -28,7 +28,7 @@ overrode the settings with other TSS, XML, or JS settings:
 "Window": {
 	orientationModes: [
     Ti.UI.PORTRAIT
-	] 	
+	]
 }
 
 

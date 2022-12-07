@@ -1,6 +1,7 @@
 "#index": {
 	backgroundColor:"white",
-	layout: "vertical"
+	layout: "vertical",
+	windowSoftInputMode: Titanium.UI.Android.SOFT_INPUT_ADJUST_RESIZE
 }
 
 "#logo": {
