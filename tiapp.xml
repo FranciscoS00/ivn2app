@@ -52,7 +52,6 @@
 	</android>
 	<modules>
         <module platform="android">ti.barcode</module>
-		<module platform="android">ti.imagepicker</module>
 	</modules>
 	<deployment-targets>
 		<target device="android">true</target>

@@ -2,7 +2,6 @@ $.postExp.open();
 
 const http = require("http");
 const Barcode = require('ti.barcode');
-const ImagePicker = require("ti.imagepicker");
 Barcode.allowRotation = true;
 Barcode.displayedMessage = ' ';
 Barcode.allowMenu = false;
@@ -16,6 +15,12 @@ $.gallery.addEventListener('click', function(){
     Ti.Media.openPhotoGallery({
         mediaTypes: [ Titanium.Media.MEDIA_TYPE_PHOTO ],
         success: function (e) {
+			let params = {
+				demo_image: e.media
+			};
+			http.post("form", params, function (e) {
+				console.log("funciona");
+			});
             $.teste.image = e.media;
         },
         error: function (e) {
