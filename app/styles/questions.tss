@@ -7,7 +7,8 @@
     bottom: "30%",
     width: "100%",
     height: Ti.UI.SIZE,
-    layout: "vertical"	
+    layout: "vertical",
+    scrollType: "vertical"
 }
 
 "#question1": {
@@ -15,6 +16,7 @@
 	borderWidth: "5px",
 	borderRadius: "50px",
 	height: Ti.UI.SIZE,
+    width: "90%",
     font:{
         fontFamily: "Arial",
         fontSize: 40
@@ -26,6 +28,7 @@
 	borderWidth: "5px",
 	borderRadius: "50px",
 	height: Ti.UI.SIZE,
+    width: "90%",
     font:{
         fontFamily: "Arial",
         fontSize: 40
