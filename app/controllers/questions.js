@@ -92,11 +92,12 @@ $.question1.addEventListener("click", function(e){
     });
     var answer = Ti.UI.createLabel({
         text: $.question1.title,
-        backgroundColor: "#83b799",
+        //backgroundColor: "#83b799",
         color: "black",
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
         right: "10px",
+        left: "10px",
         top: "10px",
         font: {
             fontFamily: "Roboto-Regular",
@@ -139,11 +140,11 @@ $.question2.addEventListener("click", function(e){
     });
     var answer = Ti.UI.createLabel({
         text: $.question2.title,
-        backgroundColor: "#83b799",
         color: "black",
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
         right: "10px",
+        left: "10px",
         top: "10px",
         font: {
             fontFamily: "Roboto-Regular",
@@ -188,7 +189,6 @@ function makeChanges(question){
     });
     var answer = Ti.UI.createLabel({
         text: answers[question],
-        backgroundColor: "#186c46",
         color: "black",
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
@@ -209,11 +209,11 @@ function makeChanges(question){
         questionsAsked.push(question);
     }
     if(questionsAsked.length == 12){
+        $.question1.title = "Ajudar";
+        $.question2.visible = false;
         setTimeout(() => {
             $.chat.scrollToBottom();
         }, 500)
-        $.question1.title = "Ajudar";
-        $.question2.visible = false;
         //Alloy.createController("postExp").getView().open();
     }else{
         nextQuestions = questions[answers[question]];

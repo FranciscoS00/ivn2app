@@ -1,7 +1,7 @@
 <Alloy>
 	<Window id="scan">
 		<ImageView id="rocket"/>
-		<Label id="title">Obrigado pela ajuda!</Label>
+		<Label id="title"></Label>
 		<ImageView id="astro"/>
 		<View id="logosView">
 			<ImageView class="logos" image="/logoWhite.png"/>
