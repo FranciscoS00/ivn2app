@@ -5,6 +5,7 @@ $.nextPage.addEventListener("click", function(){
 });
 
 $.video.addEventListener("complete", function(){
-    $.nextPage.backgroundColor = "#83d6a9";
+    $.nextPage.backgroundColor = "#186c46";
+    $.nextPage.borderColor = "#186c46";
     $.nextPage.touchEnabled = true;
 });

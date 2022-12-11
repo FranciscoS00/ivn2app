@@ -1,5 +1,6 @@
 "#intro": {
-    layout: "vertical"	
+    layout: "vertical",
+	backgroundImage: "/Background_2.jpg"	
 }
 
 "#video": {
@@ -25,8 +26,10 @@
 }
 
 "#title": {
+	top: "5%",
     font:{
 		fontFamily: "Oswald-Regular",
 		fontSize: 40
-	}		
+	},
+	color: "white"		
 }
