@@ -5,7 +5,7 @@
 "#video": {
     top: "5%",
     url:"/Y2Mate.is - 1080X1920-Main Video.mp4-Vy0YezQhMd0-144p-1656280011459.mp4",
-    height: "80%",
+    height: "70%",
     autoplay: "true",
     showsControls: false
 }
@@ -13,12 +13,20 @@
 "#nextPage": {
 	top: "5%",
 	title: "    Avançar    ",
-	borderWidth: "5px",
-	borderRadius: "50px",
+	borderRadius: "25px",
+    backgroundColor: "grey",
+	borderColor: "grey",
 	height: Ti.UI.SIZE,
     font:{
 		fontFamily: "Arial",
 		fontSize: 40
 	},
     touchEnabled: true, //change to false after other pages are done
+}
+
+"#title": {
+    font:{
+		fontFamily: "Oswald-Regular",
+		fontSize: 40
+	}		
 }

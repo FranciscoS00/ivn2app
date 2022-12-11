@@ -1,5 +1,6 @@
 <Alloy>
 	<Window id="intro">
+		<Label id="title">História do Lourenço</Label>
 		<VideoPlayer id="video"/>
 		<Button id="nextPage" class="fontClass"></Button>
 	</Window>

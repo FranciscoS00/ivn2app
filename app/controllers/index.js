@@ -10,3 +10,13 @@ $.nextPage.addEventListener("click", function(e){
 		Alloy.createController("intro").getView().open();
 	}
 });
+
+$.nameInput.addEventListener("change", function(e){
+	if($.nameInput.value != ""){
+		$.nextPage.backgroundColor = "#186c46";
+		$.nextPage.borderColor = "#186c46";
+	}else{
+		$.nextPage.backgroundColor = "grey";
+		$.nextPage.borderColor = "grey";
+	}
+});
