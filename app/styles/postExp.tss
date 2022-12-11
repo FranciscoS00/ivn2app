@@ -29,8 +29,8 @@
 }
 
 "#rocket": {
-	image: "/appicon.png",
+	image: "/spaceship.png",
 	top: "30%",
-	height: "10%",
+	height: "20%",
 	left: "10%"
 }
