@@ -66,86 +66,144 @@ $.question1.addEventListener("click", function(e){
     if($.question1.title == "Ajudar"){
         Alloy.createController("postExp").getView().open();
     }
-    var sizeView = Ti.UI.createView({
-        width: "70%",
-        height: Ti.UI.SIZE,
-        right: 0
-    });
-    var question = Ti.UI.createLabel({
-        text: $.question1.title,
-        backgroundColor: "green",
-        color: "black",
+    var wholeView = Ti.UI.createView({
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
         right: 0,
+        layout: "horizontal",
+        top: "10px",
+    });
+    var profileImage = Ti.UI.createImageView({
+        image: "/profileIcon.png",
+        height: "100px",
+        top: 0
+    });
+    var sizeView = Ti.UI.createView({
+        width: "70%",
+        height: Ti.UI.SIZE,
+        right: "10px"
+    });
+    var answerView = Ti.UI.createView({
+        height: Ti.UI.SIZE,
+        width: Ti.UI.SIZE,
+        backgroundColor: "#83b799",
+        borderRadius: "20px",
+        right: 0
+    });
+    var answer = Ti.UI.createLabel({
+        text: $.question1.title,
+        backgroundColor: "#83b799",
+        color: "black",
+        height: Ti.UI.SIZE,
+        width: Ti.UI.SIZE,
+        right: "10px",
         top: "10px",
         font: {
             fontFamily: "Roboto-Regular",
             fontSize: 40
         },
-        borderWidth: "2px",
-        borderRadius: "10px",
-        borderColor: "black"
+        textAlign: Titanium.UI.TEXT_ALIGNMENT_RIGHT
     });
-    sizeView.add(question);
-    $.chat.add(sizeView);
+    answerView.add(answer)
+    sizeView.add(answerView);
+    wholeView.add(sizeView);
+    wholeView.add(profileImage);
+    $.chat.add(wholeView);
     makeChanges($.question1.title);
 })
 
 $.question2.addEventListener("click", function(e){
-    var sizeView = Ti.UI.createView({
-        width: "70%",
-        height: Ti.UI.SIZE,
-        right: 0
-    });
-    var question = Ti.UI.createLabel({
-        text: $.question2.title,
-        backgroundColor: "green",
-        color: "black",
+    var wholeView = Ti.UI.createView({
+        top: "10px",
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
         right: 0,
+        layout: "horizontal"
+    });
+    var profileImage = Ti.UI.createImageView({
+        image: "/profileIcon.png",
+        height: "100px",
+        top: 0
+    });
+    var sizeView = Ti.UI.createView({
+        width: "70%",
+        height: Ti.UI.SIZE,
+        right: "10px"
+    });
+    var answerView = Ti.UI.createView({
+        height: Ti.UI.SIZE,
+        width: Ti.UI.SIZE,
+        backgroundColor: "#83b799",
+        borderRadius: "20px",
+        right: 0
+    });
+    var answer = Ti.UI.createLabel({
+        text: $.question2.title,
+        backgroundColor: "#83b799",
+        color: "black",
+        height: Ti.UI.SIZE,
+        width: Ti.UI.SIZE,
+        right: "10px",
         top: "10px",
         font: {
             fontFamily: "Roboto-Regular",
             fontSize: 40
         },
-        borderWidth: "2px",
-        borderRadius: "10px",
-        borderColor: "black"
+        textAlign: Titanium.UI.TEXT_ALIGNMENT_RIGHT
     });
-    sizeView.add(question);
-    $.chat.add(sizeView);
+    answerView.add(answer)
+    sizeView.add(answerView);
+    wholeView.add(sizeView);
+    wholeView.add(profileImage);
+    $.chat.add(wholeView);
     makeChanges($.question2.title);
 })
 
 //add answer to the chat view. Change questions on buttons and add the questions already made into an array to track what is missing
 function makeChanges(question){
-    Alloy.createController("postExp").getView().open();
+    //Alloy.createController("postExp").getView().open();
     //adding answer to the question into the chat view
-    var sizeView = Ti.UI.createView({
-        width: "70%",
-        height: Ti.UI.SIZE,
-        left: 0
-    });
-    var answer = Ti.UI.createLabel({
-        text: answers[question],
-        backgroundColor: "yellow",
-        color: "black",
+    var wholeView = Ti.UI.createView({
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
         left: 0,
+        layout: "horizontal",
+        top: "10px",
+    });
+    var profileImage = Ti.UI.createImageView({
+        image: "/LourencoIcon.png",
+        height: "100px",
+        top: 0
+    });
+    var sizeView = Ti.UI.createView({
+        width: "70%",
+        height: Ti.UI.SIZE,
+        left: "10px"
+    });
+    var answerView = Ti.UI.createView({
+        height: Ti.UI.SIZE,
+        width: Ti.UI.SIZE,
+        backgroundColor: "#186c46",
+        borderRadius: "20px"
+    });
+    var answer = Ti.UI.createLabel({
+        text: answers[question],
+        backgroundColor: "#186c46",
+        color: "black",
+        height: Ti.UI.SIZE,
+        width: Ti.UI.SIZE,
+        left: "10px",
         top: "10px",
         font: {
             fontFamily: "Roboto-Regular",
             fontSize: 40
         },
-        borderWidth: "2px",
-        borderRadius: "10px",
-        borderColor: "black"
     });
-    sizeView.add(answer);
-    $.chat.add(sizeView);
+    answerView.add(answer)
+    sizeView.add(answerView);
+    wholeView.add(profileImage);
+    wholeView.add(sizeView);
+    $.chat.add(wholeView);
     //check next questions
     if(!questionsAsked.includes(question)){
         questionsAsked.push(question);
@@ -180,5 +238,3 @@ function multipleExist(arr, values) {
         return arr.includes(value);
     });
 } */
-
-//ToDo: after a certain number of questions are made change the button to next to open the postExp page
