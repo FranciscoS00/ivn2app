@@ -1,9 +1,12 @@
 <Alloy>
 	<Window id="scan">
-		<ImageView id="rocket"></ImageView>
-		<View id="backView">
-			<Label id="title">Thank you for your help</Label>
+		<ImageView id="rocket"/>
+		<Label id="title">Obrigado pela ajuda!</Label>
+		<ImageView id="astro"/>
+		<View id="logosView">
+			<ImageView class="logos" image="/logoWhite.png"/>
+			<ImageView class="logos" image="/umaLogoTransp.png"/>
+			<ImageView class="logos" image="/mdmiLogo.png"/>
 		</View>
-		<ImageView id="astro"></ImageView>
 	</Window>
 </Alloy>

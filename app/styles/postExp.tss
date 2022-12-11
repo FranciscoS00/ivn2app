@@ -32,5 +32,6 @@
 	image: "/spaceship.png",
 	top: "30%",
 	height: "20%",
-	left: "10%"
+	left: "10%",
+	rotation: "180"
 }

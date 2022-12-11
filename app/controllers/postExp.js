@@ -19,9 +19,8 @@ $.gallery.addEventListener('click', function(){
 				demo_image: e.media
 			};
 			http.post("form", params, function (e) {
-				console.log("funciona");
+				console.log(e);
 			});
-            $.teste.image = e.media;
         },
         error: function (e) {
             alert('error opening image: ' + e);

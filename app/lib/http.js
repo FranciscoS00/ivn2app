@@ -56,3 +56,13 @@ exports.post = function (url, data, callback, progress) {
     console.log("rip internet");
   }
 };
+
+function checkJSON(_json) {
+  try {
+    JSON.parse(_json);
+  } catch (e) {
+    alerted.note(e);
+    return false;
+  }
+  return true;
+}

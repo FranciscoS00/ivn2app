@@ -1,35 +1,32 @@
 "#index": {
 	backgroundImage: "/Background1.jpg",
 	layout: "vertical",
-	windowSoftInputMode: Titanium.UI.Android.SOFT_INPUT_ADJUST_RESIZE,
+	windowSoftInputMode: Titanium.UI.Android.SOFT_INPUT_STATE_ALWAYS_VISIBLE,
 }
 
 "#logo": {
-	image: "/StudioLogo.png",
-	width: "90%",
-	left: "5%",
+	image: "/naturezaLogo.png",
+	width: "80%",
 	top: "5%"
 }
 
 "#question": {
 	text: "Qual é o teu nome?",
-	top: "20%",
+	top: "15%",
 	color: "white"
 }
 
 "#nameInput": {
 	hintText: "Introduz o teu nome.",
-	width: "90%",
+	width: "80%",
 	height: Ti.UI.SIZE,
-	borderWidth: "5px",
-	borderRadius: "20px",
 	top: "5%",
 	backgroundColor: "#186c46",
 	hintTextColor: "black"
 }
 
 "#nextPage": {
-	top: "10%",
+	top: "15%",
 	title: "    Avançar    ",
 	borderRadius: "25px",
 	backgroundColor: "grey",
@@ -49,5 +46,6 @@
 		fontFamily: "Oswald-Regular",
 		fontSize: 40
 	},
-	color: "white"
+	color: "white",
+	top: "8%"
 }
