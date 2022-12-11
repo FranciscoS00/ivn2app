@@ -1,0 +1,29 @@
+"#scan": {
+    layout: "vertical",
+    backgroundImage: "/Background_4.jpg"
+}
+
+"#rocket": {
+	image: "/appicon.png",
+	top: "5%",
+	height: "10%",
+	right: "10%"
+}
+
+"#title": {
+    font:{
+        fontFamily: "Roboto-Regular",
+        fontSize: 30
+    },
+    backgroundColor: "#83b799",
+    borderWidth: "5px",
+	borderRadius: "25px",
+    width: "80%",
+    textAlign: 'center',
+    color: "black"
+}
+
+"#astro": {
+    image: "/appicon.png",
+    height: "60%"
+}

@@ -1,5 +1,9 @@
 <Alloy>
 	<Window id="scan">
-		<Label>Something about Lourenço being grateful for the help of the kids</Label>
+		<ImageView id="rocket"></ImageView>
+		<View height="20%" width="60%">
+			<Label id="title">Thank you for your help</Label>
+		</View>
+		<ImageView id="astro"></ImageView>
 	</Window>
 </Alloy>

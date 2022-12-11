@@ -17,9 +17,9 @@
 	borderRadius: "25px",
     backgroundColor: "grey",
 	borderColor: "grey",
-	height: Ti.UI.SIZE,
+	height: "5%",
     font:{
-		fontFamily: "Arial",
+		fontFamily: "Roboto-Regular",
 		fontSize: 40
 	},
     touchEnabled: true, //change to false after other pages are done

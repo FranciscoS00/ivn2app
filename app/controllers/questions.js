@@ -80,7 +80,7 @@ $.question1.addEventListener("click", function(e){
         right: 0,
         top: "10px",
         font: {
-            fontFamily: "Arial",
+            fontFamily: "Roboto-Regular",
             fontSize: 40
         },
         borderWidth: "2px",
@@ -107,7 +107,7 @@ $.question2.addEventListener("click", function(e){
         right: 0,
         top: "10px",
         font: {
-            fontFamily: "Arial",
+            fontFamily: "Roboto-Regular",
             fontSize: 40
         },
         borderWidth: "2px",
@@ -121,6 +121,7 @@ $.question2.addEventListener("click", function(e){
 
 //add answer to the chat view. Change questions on buttons and add the questions already made into an array to track what is missing
 function makeChanges(question){
+    Alloy.createController("postExp").getView().open();
     //adding answer to the question into the chat view
     var sizeView = Ti.UI.createView({
         width: "70%",
@@ -136,7 +137,7 @@ function makeChanges(question){
         left: 0,
         top: "10px",
         font: {
-            fontFamily: "Arial",
+            fontFamily: "Roboto-Regular",
             fontSize: 40
         },
         borderWidth: "2px",

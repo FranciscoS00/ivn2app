@@ -34,7 +34,7 @@
 	borderRadius: "25px",
 	backgroundColor: "grey",
 	borderColor: "grey",
-	height: Ti.UI.SIZE
+	height: "5%"
 }
 
 ".fontClass": {

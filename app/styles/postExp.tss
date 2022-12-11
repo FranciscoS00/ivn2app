@@ -1,23 +1,36 @@
 "#postExp": {
-    layout: "vertical"	
+    layout: "vertical",
+	backgroundImage: "/Background_4.jpg"
 }
 
 "#title": {
     top: "5%",
     textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
     font:{
-		fontFamily: "Arial",
+		fontFamily: "Oswald-Regular",
 		fontSize: 40
-	}	
+	},
+	width: "60%",
+	color: "white"
 }
 
 ".button": {
-    top: "5%",
+    top: "10%",
 	borderWidth: "5px",
 	borderRadius: "50px",
-	height: Ti.UI.SIZE,
+	height: "5%",
     font:{
-		fontFamily: "Arial",
+		fontFamily: "Roboto-Regular",
 		fontSize: 40
-	}	
+	},
+	width: "50%",
+	backgroundColor: "#186c46",
+	borderColor: "#186c46"
+}
+
+"#rocket": {
+	image: "/appicon.png",
+	top: "30%",
+	height: "10%",
+	left: "10%"
 }

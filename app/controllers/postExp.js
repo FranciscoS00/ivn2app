@@ -73,7 +73,7 @@ var cancelButton = Ti.UI.createButton({
 	font: {
 		fontWeight: 'bold',
 		fontSize: 30,
-		fontFamily: "Arial"
+		fontFamily: "Roboto-Regular"
 	},
 	borderColor: '#000',
 	borderRadius: 40,
@@ -90,6 +90,7 @@ overlay.add(cancelButton);
 
 
 $.scan.addEventListener('click', function () {
+	Alloy.createController("scan").getView().open(); // remove this
 	cameraPermission(function (re) {
 		reset();
 		// Note: while the simulator will NOT show a camera stream in the simulator, you may still call "Barcode.capture"
