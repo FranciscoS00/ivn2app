@@ -10,7 +10,7 @@ const answers = {
     "Quem és?": "Sou o Lourenço, sou um rapaz do futuro e preciso da tua ajuda.",
     "O que é isto?": "É uma aplicação para que possamos comunicar entre o teu presente e o meu presente.",
     "Do futuro?": "Sim, envei-te o postal para começarmos a comunicar e para que me possas ajudar.",
-    "Da minha ajuda?": "Sim, o meu futuro foi estragado por causa da ganancia das pessoas que destruiram o nosso planeta. Nunca cheguei a ter um contacto e conexão com a natureza.",
+    "Porque precisas de ajuda?": "O meu futuro foi estragado por causa da ganancia das pessoas que destruiram o nosso planeta. Nunca cheguei a ter um contacto e conexão com a natureza.",
     "Como é que é possivel?": "Sou do ano 2567, a nossa tecnologia é bastante avançada mas só conseguimos enviar pequenos objectos para o passado e não com muita frequência.",
     "O que pretendes com esta aplicação?": "Queria te pedir ajuda com uma experiencia que estamos a desenvolver no futuro.",
     "Para que precisas da minha ajuda?": "Preciso da tua ajuda para que possamos corrigir alguns problemas que estamos a ter no meu presente.",
@@ -38,21 +38,21 @@ const answers = {
 }; */
 
 const questions = {
-    "Sou o Lourenço, sou um rapaz do futuro e preciso da tua ajuda.": ["Do futuro?", "Da minha ajuda?"],
+    "Sou o Lourenço, sou um rapaz do futuro e preciso da tua ajuda.": ["Do futuro?", "Porque precisas de ajuda?"],
     "Sim, envei-te o postal para começarmos a comunicar e para que me possas ajudar.": ["Para que precisas da minha ajuda?", "Como é que conheces a Madeira?"],
     "Preciso da tua ajuda para que possamos corrigir alguns problemas que estamos a ter no meu presente.": ["Que problemas?", "Como posso ajudar?"],
-    "No meu presente toda a natureza foi destruida e apenas temos algumas espécies disponiveis e não são suficientes para nos manter a todos.": ["Como posso ajudar?", "Da minha ajuda?"],
-    "Preciso que coletes informação sobre mais espécies para que possamos replica-lás e consigamos a voltar a ter uma natureza como antes. A quinta do Santo da Serra tem as espécies que precisamos.": ["Que problemas?", "Da minha ajuda?"],
-    "Sim, o meu futuro foi estragado por causa da ganancia das pessoas que destruiram o nosso planeta. Nunca cheguei a ter um contacto e conexão com a natureza.": ["Porquê uma criança?", "O que aconteceu?"],
+    "No meu presente toda a natureza foi destruida e apenas temos algumas espécies disponiveis e não são suficientes para nos manter a todos.": ["Como posso ajudar?", "Porque precisas de ajuda?"],
+    "Preciso que coletes informação sobre mais espécies para que possamos replica-lás e consigamos a voltar a ter uma natureza como antes. A quinta do Santo da Serra tem as espécies que precisamos.": ["Que problemas?", "Porque precisas de ajuda?"],
+    "O meu futuro foi estragado por causa da ganancia das pessoas que destruiram o nosso planeta. Nunca cheguei a ter um contacto e conexão com a natureza.": ["Porquê uma criança?", "O que aconteceu?"],
     "Os adultos no meu passado estragaram a nossa natureza, acredito que tens a capacidade para ser melhor do que eles foram.": ["O que aconteceu?", "O que é isto?"],
     "Destruiram a natureza no nosso planeta por causa da sua ganancia mas esqueceram-se o quão importante a natureza é para nós.": ["Porquê uma criança?", "O que é isto?"],
     "É uma aplicação para que possamos comunicar entre o teu presente e o meu presente.": ["Como é que é possivel?", "O que pretendes com esta aplicação?"],
     "Sou do ano 2567, a nossa tecnologia é bastante avançada mas só conseguimos enviar pequenos objectos para o passado e não com muita frequência.": ["O que pretendes com esta aplicação?", "Quem és?"],
     "Queria te pedir ajuda com uma experiencia que estamos a desenvolver no futuro.": ["Como é que é possivel?", "Quem és?"],
-    "As gerações anteriores da minha familia viveram na Madeira durante muitos anos, os meus bisavós viveram no Santo da Serra durante toda a sua vida.": ["Para que precisas da minha ajuda?", "Da minha ajuda?"]
+    "As gerações anteriores da minha familia viveram na Madeira durante muitos anos, os meus bisavós viveram no Santo da Serra durante toda a sua vida.": ["Para que precisas da minha ajuda?", "Porque precisas de ajuda?"]
 }
 
-const backTo1 = ["Do futuro?","Para que precisas da minha ajuda?","Que problemas?","Como posso ajudar?","Como é que conheces a Madeira?","Da minha ajuda?","Porquê uma criança?","O que aconteceu?"];
+const backTo1 = ["Do futuro?","Para que precisas da minha ajuda?","Que problemas?","Como posso ajudar?","Como é que conheces a Madeira?","Porque precisas de ajuda?","Porquê uma criança?","O que aconteceu?"];
 
 //tracker of what questions where asked
 var questionsAsked = [];
@@ -65,6 +65,7 @@ $.question2.title = "O que é isto?";
 $.question1.addEventListener("click", function(e){
     if($.question1.title == "Ajudar"){
         Alloy.createController("postExp").getView().open();
+        return;
     }
     var wholeView = Ti.UI.createView({
         height: Ti.UI.SIZE,

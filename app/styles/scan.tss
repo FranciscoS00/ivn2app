@@ -21,7 +21,7 @@
 }
 
 "#astro": {
-    image: "/appicon.png",
+    image: "/lourenco.png",
     height: "60%"
 }
 
