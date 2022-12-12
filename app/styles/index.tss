@@ -1,7 +1,7 @@
 "#index": {
 	backgroundImage: "/Background1.jpg",
 	layout: "vertical",
-	windowSoftInputMode: Titanium.UI.Android.SOFT_INPUT_STATE_ALWAYS_VISIBLE,
+	windowSoftInputMode: Titanium.UI.Android.SOFT_INPUT_ADJUST_RESIZE,
 }
 
 "#logo": {
@@ -27,7 +27,7 @@
 
 "#nextPage": {
 	top: "15%",
-	title: "    Avançar    ",
+	title: "Avançar",
 	borderRadius: "25px",
 	backgroundColor: "grey",
 	borderColor: "grey",

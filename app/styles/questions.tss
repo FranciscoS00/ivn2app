@@ -21,7 +21,7 @@
     width: "90%",
     font:{
         fontFamily: "Roboto-Regular",
-        fontSize: 40
+        fontSize: 26
     }
 }
 
@@ -35,6 +35,6 @@
     width: "90%",
     font:{
         fontFamily: "Roboto-Regular",
-        fontSize: 40
+        fontSize: 26
     }
 }

@@ -13,7 +13,7 @@
 
 "#nextPage": {
 	top: "5%",
-	title: "    Avançar    ",
+	title: "Avançar",
 	borderRadius: "25px",
     backgroundColor: "grey",
 	borderColor: "grey",
@@ -22,7 +22,7 @@
 		fontFamily: "Roboto-Regular",
 		fontSize: 40
 	},
-    touchEnabled: false, //change to false after other pages are done
+    touchEnabled: true, //change to false after other pages are done
 }
 
 "#title": {
