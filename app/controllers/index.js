@@ -1,22 +1,18 @@
 $.index.open();
 
-if(Ti.App.Properties.getBool("post") == true){
-	Alloy.createController("postExp").getView().open();
-}
-
-$.nextPage.addEventListener("click", function(e){
-	if($.nameInput.value != ""){
-		Ti.App.Properties.setString("name", $.nameInput.value);
-		Alloy.createController("intro").getView().open();
-	}
+var audioPlayer = Ti.Media.createAudioPlayer({
+    url: "introSound.mp3",
+    allowBackground: true
 });
 
-$.nameInput.addEventListener("change", function(e){
-	if($.nameInput.value != ""){
-		$.nextPage.backgroundColor = "#186c46";
-		$.nextPage.borderColor = "#186c46";
-	}else{
-		$.nextPage.backgroundColor = "grey";
-		$.nextPage.borderColor = "grey";
-	}
+audioPlayer.start();
+
+audioPlayer.addEventListener("complete", function(e){
+	$.hiddenView.show();
 });
+
+$.chatButton.addEventListener("click", function(e){
+	Alloy.createController("questions").getView().open();
+});
+
+//Alloy.createController("questions").getView().open();

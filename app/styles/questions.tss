@@ -14,28 +14,24 @@
 
 "#question1": {
 	bottom: "20%",
-	borderWidth: "5px",
-	borderRadius: "50px",
-    backgroundColor: "#83b799",
-    borderColor: "#83b799",
-	height: Ti.UI.SIZE,
+    backgroundImage: "/squareButton.png",
+	height: "6%",
+    color: "white",
     width: "90%",
     font:{
-        fontFamily: "Roboto-Regular",
+        fontFamily: "Equinox-Regular",
         fontSize: 26
     }
 }
 
 "#question2": {
 	bottom: "10%",
-	borderWidth: "5px",
-	borderRadius: "50px",
-    backgroundColor: "#83b799",
-    borderColor: "#83b799",
-	height: Ti.UI.SIZE,
+	backgroundImage: "/squareButton.png",
+	height: "6%",
+    color: "white",
     width: "90%",
     font:{
-        fontFamily: "Roboto-Regular",
+        fontFamily: "Equinox-Regular",
         fontSize: 26
     }
 }

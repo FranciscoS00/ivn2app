@@ -6,7 +6,7 @@ Barcode.allowRotation = true;
 Barcode.displayedMessage = ' ';
 Barcode.allowMenu = false;
 Barcode.allowInstructions = false;
-Barcode.useLED = true;
+Barcode.useLED = false;
 
 Ti.App.Properties.setBool("post", true);
 
@@ -89,8 +89,8 @@ overlay.add(cancelButton);
 
 
 $.scan.addEventListener('click', function () {
-	Alloy.createController("scan").getView().open(); // remove this
-	cameraPermission(function (re) {
+	Alloy.createController("scan").getView().open(); // remove this on final
+	/* cameraPermission(function (re) {
 		reset();
 		// Note: while the simulator will NOT show a camera stream in the simulator, you may still call "Barcode.capture"
 		// to test your barcode scanning overlay.
@@ -98,13 +98,13 @@ $.scan.addEventListener('click', function () {
 			animate: true,
 			overlay: overlay,
 			showCancel: false,
-			showRectangle: false,
+			showRectangle: true,
 			keepOpen: false,
 			acceptedFormats: [
 				Barcode.FORMAT_QR_CODE
 			]
 		});
-	});
+	}); */
 });
 
 var scannedBarcodes = {};
@@ -125,6 +125,7 @@ Barcode.addEventListener('cancel', function (e) {
 });
 
 Barcode.addEventListener('success', function (e) {
+	console.log(e.result);
 	if(e.result == "https://www.uma.pt/"){
 		Alloy.createController("scan").getView().open();
 	}

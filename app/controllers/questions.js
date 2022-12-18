@@ -21,22 +21,6 @@ const answers = {
     "O que aconteceu?": "Destruiram a natureza no nosso planeta por causa da sua ganancia mas esqueceram-se o quão importante a natureza é para nós."
 };
 
-//"answer": ["question1 to come", "question2 to come"]
-/* const questions = {
-    "Sou o Lourenço, sou um rapaz do futuro e preciso da tua ajuda.": ["Do futuro?", "Da minha ajuda?"],
-    "Sim, envei-te o postal para começarmos a comunicar e para que me possas ajudar.": ["Para que precisas da minha ajuda?","Como é que conheces a Madeira?"],
-    "Preciso da tua ajuda para que possamos corrigir alguns problemas que estamos a ter no meu presente.": ["Que problemas?","Como posso ajudar?"],
-    "As gerações anteriores da minha familia viveram na Madeira durante muitos anos, os meus bisavós viveram no Santo da Serra durante toda a sua vida.": ["Para que precisas da minha ajuda?","Da minha ajuda?"],
-    "No meu presente toda a natureza foi destruida e apenas temos algumas espécies disponiveis e não são suficientes para nos manter a todos.": ["Como posso ajudar?","Da minha ajuda?"],
-    "Preciso que coletes informação sobre mais espécies para que possamos replica-lás e consigamos a voltar a ter uma natureza como antes. A quinta do Santo da Serra tem as espécies que precisamos.": ["Da minha ajuda?","Que problemas?"],
-    "Sim, o meu futuro foi estragado por causa da ganancia das pessoas que destruiram o nosso planeta. Nunca cheguei a ter um contacto e conexão com a natureza.": ["Porquê uma criança?", "O que aconteceu?"],
-    "Os adultos no meu passado estragaram a nossa natureza, acredito que tens a capacidade para ser melhor do que eles foram.": ["O que aconteceu?", "Do futuro?"],
-    "Destruiram a natureza no nosso planeta por causa da sua ganancia mas esqueceram-se o quão importante a natureza é para nós.": ["Porquê uma criança?", "Do futuro?"],
-    "É uma aplicação para que possamos comunicar entre o teu presente e o meu presente.": ["Como é que é possivel?", "O que pretendes com esta aplicação?"],
-    "Sou do ano 2567, a nossa tecnologia é bastante avançada mas só conseguimos enviar pequenos objectos para o passado e não com muita frequência.": ["O que pretendes com esta aplicação?", "Quem és?"],
-    "Queria te pedir ajuda com uma experiencia que estamos a desenvolver no futuro.": ["Como é que é possivel?", "Quem és?"]
-}; */
-
 const questions = {
     "Sou o Lourenço, sou um rapaz do futuro e preciso da tua ajuda.": ["Do futuro?", "Porque precisas de ajuda?"],
     "Sim, envei-te o postal para começarmos a comunicar e para que me possas ajudar.": ["Para que precisas da minha ajuda?", "Como é que conheces a Madeira?"],
@@ -63,10 +47,12 @@ $.question2.title = "O que é isto?";
 
 //add questions to the chat view
 $.question1.addEventListener("click", function(e){
+    Alloy.createController("postExp").getView().open(); //delete
     if($.question1.title == "Ajudar"){
         Alloy.createController("postExp").getView().open();
         return;
     }
+    //pergunta, direita 
     var wholeView = Ti.UI.createView({
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
@@ -115,6 +101,7 @@ $.question1.addEventListener("click", function(e){
 })
 
 $.question2.addEventListener("click", function(e){
+    //Lourenço, esquerda
     var wholeView = Ti.UI.createView({
         top: "10px",
         height: Ti.UI.SIZE,
@@ -159,7 +146,7 @@ $.question2.addEventListener("click", function(e){
     wholeView.add(profileImage);
     $.chat.add(wholeView);
     makeChanges($.question2.title);
-})
+});
 
 //add answer to the chat view. Change questions on buttons and add the questions already made into an array to track what is missing
 function makeChanges(question){

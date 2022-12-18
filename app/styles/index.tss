@@ -1,51 +1,44 @@
 "#index": {
-	backgroundImage: "/Background1.jpg",
-	layout: "vertical",
+	backgroundColor: "black",
+	layout: "composite",
 	windowSoftInputMode: Titanium.UI.Android.SOFT_INPUT_ADJUST_RESIZE,
 }
 
-"#logo": {
-	image: "/naturezaLogo.png",
+"#hiddenView": {
+	layout: "vertical",
+	height: "100%",
+	width: "100%",
+	visible: false,
+	backgroundImage: "/Background1.jpg"
+}
+
+"#experienceLogo": {
 	width: "80%",
-	top: "5%"
+	image: "/naturezaLogo.png",
+	top: "10%"
 }
 
-"#question": {
-	text: "Qual é o teu nome?",
-	top: "15%",
-	color: "white"
+"#studioLogo": {
+	image: "/logoWhite.png",
+	width: "30%",
+	top: "20%"
 }
 
-"#nameInput": {
-	hintText: "Introduz o teu nome.",
+"#chatButton": {
+	backgroundImage: "/roundButton.png",
+	width: "30%",
+	height: "20%",
+	top: "25%"
+}
+
+"#buttonLabel":{
+	text: "Abrir mensagem",
+	color: "white",
+	font: {
+		fontFamily: "Cascade",
+		fontSize: 30
+	},
 	width: "80%",
 	height: Ti.UI.SIZE,
-	top: "5%",
-	backgroundColor: "#186c46",
-	hintTextColor: "black"
-}
-
-"#nextPage": {
-	top: "15%",
-	title: "Avançar",
-	borderRadius: "25px",
-	backgroundColor: "grey",
-	borderColor: "grey",
-	height: "5%"
-}
-
-".fontClass": {
-	font:{
-		fontFamily: "Roboto-Regular",
-		fontSize: 40
-	}	
-}
-
-"#title": {
-	font:{
-		fontFamily: "Oswald-Regular",
-		fontSize: 40
-	},
-	color: "white",
-	top: "8%"
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER
 }

@@ -1,9 +1,11 @@
 <Alloy>
 	<Window id="index">
-		<ImageView id="logo"></ImageView>
-		<Label id="title">Sente a natureza</Label>
-		<Label id="question" class="fontClass"></Label>
-		<TextField id="nameInput" class="fontClass"></TextField>
-		<Button id="nextPage" class="fontClass"></Button>
+		<View id="hiddenView">
+			<ImageView id="experienceLogo"></ImageView>
+			<View id="chatButton">
+				<Label id="buttonLabel"></Label>
+			</View>
+			<ImageView id="studioLogo"></ImageView>
+		</View>
 	</Window>
 </Alloy>
