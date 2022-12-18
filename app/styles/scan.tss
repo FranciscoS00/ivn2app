@@ -12,17 +12,22 @@
 
 "#title": {
     font:{
-        fontFamily: "Oswald-Regular",
+        fontFamily: "DIN-Regular",
         fontSize: 40
     },
+    top: "5%",
     width: "70%",
     textAlign: 'center',
-    color: "white"
+    color: "white",
+    text: "Obrigado pela tua ajuda, aqui tens as instruções de como plantar as sementes que te enviei"
 }
 
-"#astro": {
-    image: "/lourenco.png",
-    height: "60%"
+".instructionsLabel":{
+    font:{
+        fontFamily: "DIN-Regular",
+        fontSize: 30
+    },
+    color: "white"
 }
 
 "#logosView": {

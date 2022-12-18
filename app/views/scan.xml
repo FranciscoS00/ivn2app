@@ -1,8 +1,14 @@
 <Alloy>
 	<Window id="scan">
-		<ImageView id="rocket"/>
 		<Label id="title"></Label>
-		<ImageView id="astro"/>
+		<ScrollView width="100%" height="Ti.UI.SIZE" bottom="25%" top="5%" layout="vertical">
+			<Label class="instructionsLabel">Plantar</Label>
+			<Label class="instructionsLabel">Regar</Label>
+			<Label class="instructionsLabel">semear</Label>
+			<Label class="instructionsLabel">luz</Label>
+			<Label class="instructionsLabel">agua</Label>
+			<Label class="instructionsLabel">teste</Label>
+		</ScrollView>
 		<View id="logosView">
 			<ImageView class="logos" image="/logoWhite.png"/>
 			<ImageView class="logos" image="/umaLogoTransp.png"/>

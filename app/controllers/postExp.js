@@ -10,24 +10,6 @@ Barcode.useLED = false;
 
 Ti.App.Properties.setBool("post", true);
 
-//send image to api
-$.gallery.addEventListener('click', function(){
-    Ti.Media.openPhotoGallery({
-        mediaTypes: [ Titanium.Media.MEDIA_TYPE_PHOTO ],
-        success: function (e) {
-			let params = {
-				demo_image: e.media
-			};
-			http.post("form", params, function (e) {
-				console.log(e);
-			});
-        },
-        error: function (e) {
-            alert('error opening image: ' + e);
-        }
-    });
-});
-
 function callback(){
 	console.log("sending images");
 }
@@ -88,7 +70,7 @@ cancelButton.addEventListener('click', function () {
 overlay.add(cancelButton);
 
 
-$.scan.addEventListener('click', function () {
+$.scanButton.addEventListener('click', function () {
 	Alloy.createController("scan").getView().open(); // remove this on final
 	/* cameraPermission(function (re) {
 		reset();
