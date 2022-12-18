@@ -1,6 +1,6 @@
 "#questions": {
     layout: "composite",
-    backgroundImage: "/Background_3.jpg"
+    backgroundImage: "/Background1.jpg"
 }
 
 "#chat": {
