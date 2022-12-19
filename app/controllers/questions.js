@@ -101,9 +101,19 @@ $.question1.addEventListener("click", function(e){
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
         backgroundGradient: {
-            colors: [ { color: "#2d198f"}, { color: "#135d9c"}],
-            startPoint: { x: '0%', y: '0%' },
-            endPoint: { x: '100%', y: '100%' }
+            type: 'linear',
+            colors: [
+                '#2d198f', '#135d9c'
+            ],
+            startPoint: {
+                x: '0%',
+                y: '0%'
+            },
+            endPoint: {
+                x: '0%',
+                y: '100%'
+            },
+            backFillStart: true
         },
         right: 0
     });
@@ -159,9 +169,19 @@ $.question2.addEventListener("click", function(e){
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
         backgroundGradient: {
-            colors: [ { color: "#2d198f"}, { color: "#135d9c"}],
-            startPoint: { x: '0%', y: '0%' },
-            endPoint: { x: '100%', y: '100%' }
+            type: 'linear',
+            colors: [
+                '#2d198f', '#135d9c'
+            ],
+            startPoint: {
+                x: '0%',
+                y: '0%'
+            },
+            endPoint: {
+                x: '0%',
+                y: '100%'
+            },
+            backFillStart: true
         },
         right: 0
     });
@@ -228,10 +248,20 @@ function makeChanges(question){
             height: Ti.UI.SIZE,
             width: Ti.UI.SIZE,
             backgroundGradient: {
-                colors: [ { color: "#3ee8fa"}, { color: "#185359"}],
-                startPoint: { x: '0%', y: '0%' },
-                endPoint: { x: '100%', y: '100%' }
-            },
+                type: 'linear',
+                colors: [
+                    '#3ee8fa', '#185359'
+                ],
+                startPoint: {
+                    x: '0%',
+                    y: '0%'
+                },
+                endPoint: {
+                    x: '0%',
+                    y: '100%'
+                },
+                backFillStart: true
+            }
         });
         var answer = Ti.UI.createLabel({
             text: element,//answers[question],
@@ -366,10 +396,20 @@ function firstToRun(firstMessage){
         height: Ti.UI.SIZE,
         width: Ti.UI.SIZE,
         backgroundGradient: {
-            colors: [ { color: "#3ee8fa"}, { color: "#185359"}],
-            startPoint: { x: '0%', y: '0%' },
-            endPoint: { x: '100%', y: '100%' }
-        },
+            type: 'linear',
+            colors: [
+                '#3ee8fa', '#185359'
+            ],
+            startPoint: {
+                x: '0%',
+                y: '0%'
+            },
+            endPoint: {
+                x: '0%',
+                y: '100%'
+            },
+            backFillStart: true
+        }
     });
     var answer = Ti.UI.createLabel({
         text: firstMessage,

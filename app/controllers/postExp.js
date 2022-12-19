@@ -8,7 +8,7 @@ Barcode.allowMenu = false;
 Barcode.allowInstructions = false;
 Barcode.useLED = false;
 
-Ti.App.Properties.setBool("post", true);
+Ti.App.Properties.setString("post", "true");
 
 function callback(){
 	console.log("sending images");
@@ -74,8 +74,6 @@ $.scanButton.addEventListener('click', function () {
 	Alloy.createController("scan").getView().open(); // remove this on final
 	/* cameraPermission(function (re) {
 		reset();
-		// Note: while the simulator will NOT show a camera stream in the simulator, you may still call "Barcode.capture"
-		// to test your barcode scanning overlay.
 		Barcode.capture({
 			animate: true,
 			overlay: overlay,

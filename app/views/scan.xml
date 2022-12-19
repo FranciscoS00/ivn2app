@@ -1,13 +1,19 @@
 <Alloy>
 	<Window id="scan">
 		<Label id="title"></Label>
-		<ScrollView width="100%" height="Ti.UI.SIZE" bottom="25%" top="5%" layout="vertical">
-			<Label class="instructionsLabel">Plantar</Label>
-			<Label class="instructionsLabel">Regar</Label>
-			<Label class="instructionsLabel">semear</Label>
-			<Label class="instructionsLabel">luz</Label>
-			<Label class="instructionsLabel">agua</Label>
-			<Label class="instructionsLabel">teste</Label>
+		<ScrollView width="100%" height="Ti.UI.SIZE" bottom="15%" top="25%" layout="vertical">
+			<Label class="instructionsLabel">Coloque o vaso no tabuleiro para apanhar a água em excesso.</Label>
+			<Label class="instructionsLabel">Encha o vaso com terra para cultura.</Label>
+			<Label class="instructionsLabel">Pressione suavemente a terra.</Label>
+			<Label class="instructionsLabel">Deite água no vaso até começar a sair pelos furos.</Label>
+			<Label class="instructionsLabel">Deixe repousar por 20 minutos e depois deite fora a água que restou no tabuleiro.</Label>
+			<Label class="instructionsLabel">Deite as sementes na superficie do vaso.</Label>
+			<Label class="instructionsLabel">Coloque o vaso num saco de plastico e feche-o.</Label>
+			<Label class="instructionsLabel">Coloque-o em um lugar com luz e uma temperatura à volta dos 20ºC.</Label>
+			<Label class="instructionsLabel">Quando os rebentos aparecerem faça 3 buracos no saco.</Label>
+			<Label class="instructionsLabel">Quando os rebentos tiverem uma altura à volta de 5cm tire do saco.</Label>
+			<Label class="instructionsLabel">Deite água no tabuleiro e deixa os rebentos absorverem água.</Label>
+			<Label class="instructionsLabel">Deixe-as crescer tendo sempre em atenção se têm água.</Label>
 		</ScrollView>
 		<View id="logosView">
 			<ImageView class="logos" image="/logoWhite.png"/>

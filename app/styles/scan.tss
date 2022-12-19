@@ -1,5 +1,5 @@
 "#scan": {
-    layout: "vertical",
+    layout: "composite",
     backgroundImage: "/Background_4.jpg"
 }
 
@@ -27,12 +27,16 @@
         fontFamily: "DIN-Regular",
         fontSize: 30
     },
-    color: "white"
+    color: "white",
+    width: "80%",
+    textAlign: 'center',
+    top: "20px"
 }
 
 "#logosView": {
-    height: "20%",
+    height: Ti.UI.SIZE,
     width: "90%",
+    bottom: "5%",
     layout: "horizontal"
 }
 
