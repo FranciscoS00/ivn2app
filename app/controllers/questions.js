@@ -315,13 +315,13 @@ function makeChanges(question){
         }else if(element == "foto quinta"){ //photo of quinta
             var photo = Ti.UI.createImageView({
                 height: "50%",
-                image: "/bookFront.png"
+                image: "/portaSerra.jpg"
             })
             sizeView.add(photo);
         }else if(element == "foto livro"){ // photo of the book
             var photo = Ti.UI.createImageView({
                 height: "50%",
-                image: "/bookFront.png"
+                image: "/bookFront.jpg"
             })
             sizeView.add(photo);
         }

@@ -4,15 +4,9 @@ if(Ti.App.Properties.hasProperty("post")){
     Alloy.createController("postExp").getView().open();
 }
 
-var audioPlayer = Ti.Media.createAudioPlayer({
-    url: "introSound.mp3",
-    allowBackground: true
-});
-
-audioPlayer.start();
-
-audioPlayer.addEventListener("complete", function(e){
-	$.hiddenView.show();
+$.videoPlayer.addEventListener("complete", function(e){
+    $.videoPlayer.hide();
+    $.hiddenView.show();
 });
 
 $.chatButton.addEventListener("click", function(e){

@@ -1,6 +1,7 @@
 <Alloy>
 	<Window id="index">
-		<View id="hiddenView">
+		<VideoPlayer id="videoPlayer" ns="Ti.Media" url="/intro_clip.mp4" height="100%" width="100%" backgroundColor="black" autoplay="true" scalingMode="Titanium.Media.VIDEO_SCALING_RESIZE_ASPECT" showsControls="false" />
+		<View id="hiddenView" >
 			<ImageView id="experienceLogo"></ImageView>
 			<View id="chatButton">
 				<Label id="buttonLabel"></Label>
