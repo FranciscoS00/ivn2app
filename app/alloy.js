@@ -10,5 +10,3 @@
 //
 // Alloy.Globals.someGlobalFunction = function(){};
 
-Ti.App.Properties.setString("name", "");
-Ti.App.Properties.setString("post", "false");

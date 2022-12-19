@@ -1,9 +1,8 @@
 $.index.open();
 
-if(Ti.App.Properties.getString("post")=="true"){
+if(Ti.App.Properties.hasProperty("post")){
     Alloy.createController("postExp").getView().open();
 }
-console.log(Ti.App.Properties.getString("post"));
 
 var audioPlayer = Ti.Media.createAudioPlayer({
     url: "introSound.mp3",
