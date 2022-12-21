@@ -54,7 +54,7 @@ var cancelButton = Ti.UI.createButton({
 	font: {
 		fontWeight: 'bold',
 		fontSize: 30,
-		fontFamily: "Roboto-Regular"
+		fontFamily: "Cascade"
 	},
 	borderColor: '#000',
 	borderRadius: 40,

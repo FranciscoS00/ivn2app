@@ -7,7 +7,7 @@
     top: "5%",
     textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
     font:{
-		fontFamily: "DIN-Regular",
+		fontFamily: "GoodTimesRg-Regular",
 		fontSize: 30
 	},
 	width: "60%",

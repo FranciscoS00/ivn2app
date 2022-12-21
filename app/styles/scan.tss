@@ -12,8 +12,8 @@
 
 "#title": {
     font:{
-        fontFamily: "DIN-Regular",
-        fontSize: 40
+        fontFamily: "GoodTimesRg-Regular",
+        fontSize: 30
     },
     top: "5%",
     width: "70%",
@@ -24,8 +24,8 @@
 
 ".instructionsLabel":{
     font:{
-        fontFamily: "DIN-Regular",
-        fontSize: 30
+        fontFamily: "GoodTimesRg-Regular",
+        fontSize: 25
     },
     color: "white",
     width: "80%",

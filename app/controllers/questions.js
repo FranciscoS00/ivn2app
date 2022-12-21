@@ -14,15 +14,15 @@ firstToRun("Aqui o sinal está fraco, neste momento só consigo comunicar por me
 const answers = {
     "Quem és?": ["Sei que vais achar estranho, mas não estou no mesmo tempo que tu, aqui estou mais avançado.", "Estou no espaço, o futuro não é nada bom... Preciso da tua ajuda."],
     "Como te chamas?": ["Ohhh desculpa... já devia ter me apresentado... Chamo-me Lourenço, vivo no espaço."], 
-    "No espaço?": ["Sim, é possível, para ti pode ser difícil acreditar, mas no ano 2500 temos essa tecnologia."],
+    "No espaço?": ["Sim, é possível, para ti pode ser difícil acreditar, mas no ano 2653 temos essa tecnologia."],
     "O futuro é como nos filmes?": ["Os filmes são ficção, mas o que vai acontecer é real e não é nada bom"], 
     "Isso é muito estranho": ["Os filmes são ficção, mas o que vai acontecer é real e não é nada bom"], 
     "O que vai acontecer?": ["O planeta Terra já não é o que era. Posso mostrar-te o que aconteceu... Estou a enviar te um video", "video"], //if == video add the button for the video
     "Isso é mesmo verdade?": ["Infelizmente é verdade, mas ainda há tempo, o vosso futuro pode ser diferente, pode ser melhor.", "Mas preciso da tua ajuda, tens que resolver um mistério num certo sitio"],
     "Não vai acontecer": ["Infelizmente é verdade, mas ainda há tempo, o vosso futuro pode ser diferente, pode ser melhor.", "Mas preciso da tua ajuda, tens que resolver um mistério num certo sitio"],
-    "Qual sitio?": ["Perto de ti existe um ligar incrível, mágico, preciso que vás lá e lá irás saber o que fazer", "É este o lugar, Quinta do Santo da Serra", "foto quinta"], //if == "foto livro" add the photo of the quinta
+    "Qual sitio?": ["Perto de ti existe um lugar incrível, mágico, preciso que vás lá e lá irás saber o que fazer", "É este o lugar, Quinta do Santo da Serra", "foto quinta"], //if == "foto livro" add the photo of the quinta
     "O que tenho que fazer?": ["Existe um livro mágico, que era dos meus antepassados quando viviam na terra, mas está incompleto...", "Eu consegui teletransportar o livro... É este o livro", "foto livro"], //if == "foto livro" add the photo of the book
-    "E depois? O que faço?": ["Acho que estou a perguntar a ligação, fala com os teus colegas, vão saber o que fazer.", "Irei voltar a falar contigo assim que for possivel... E não te esqueças, a NATUREZA É VIDA"]   
+    "E depois? O que faço?": ["Acho que estou a perder a ligação, fala com os teus colegas, vão saber o que fazer. Espero por vocês no dia 25 de Dezembro ás 10:00.", "Irei voltar a falar contigo assim que for possível... E não te esqueças, a NATUREZA É VIDA"]   
 };
 
 //next questions based on the previously asked question, "question": ["question1", "question2"]
@@ -45,7 +45,7 @@ const questionToSend = {
     "Como te chamas?": "Espera, calma... Como te chamas?",
     "No espaço?": "Como assim? Como é que tas no espaço? Isso é possível?",
     "O futuro é como nos filmes?": "Uau, o futuro é como nos filmes? Robôs, naves espáciais, todas essas coisas incriveis?",
-    "Isso é muito estranho.": "Isso é estranho, já vi isso em filmes, mas é tudo ficção, não é possivel",
+    "Isso é muito estranho.": "Isso é estranho, já vi isso em filmes, mas é tudo ficção, não é possível",
     "O que vai acontecer?": "O que vai acontecer?",
     "Isso é mesmo verdade?": "Isso é mesmo verdade?",
     "Não vai acontecer.": "Não vai acontecer.",
@@ -83,7 +83,7 @@ $.question1.addEventListener("click", function(e){
     var nameTag = Ti.UI.createLabel({
         text: "Eu",
         font:{
-            fontFamily: "DIN-Regular",
+            fontFamily: "GoodTimesRg-Regular",
             fontSize: 30,
             fontWeight: "bold"
         },
@@ -126,7 +126,7 @@ $.question1.addEventListener("click", function(e){
         left: "10px",
         top: "10px",
         font: {
-            fontFamily: "DIN-Regular",
+            fontFamily: "GoodTimesRg-Regular",
             fontSize: 30
         },
         textAlign: Titanium.UI.TEXT_ALIGNMENT_RIGHT
@@ -151,7 +151,7 @@ $.question2.addEventListener("click", function(e){
     var nameTag = Ti.UI.createLabel({
         text: "Eu",
         font:{
-            fontFamily: "DIN-Regular",
+            fontFamily: "GoodTimesRg-Regular",
             fontSize: 30,
             fontWeight: "bold"
         },
@@ -194,7 +194,7 @@ $.question2.addEventListener("click", function(e){
         left: "10px",
         top: "10px",
         font: {
-            fontFamily: "DIN-Regular",
+            fontFamily: "GoodTimesRg-Regular",
             fontSize: 30
         },
         textAlign: Titanium.UI.TEXT_ALIGNMENT_RIGHT
@@ -230,7 +230,7 @@ function makeChanges(question){
         var nameTag = Ti.UI.createLabel({
             text: lourencoName,
             font:{
-                fontFamily: "DIN-Regular",
+                fontFamily: "GoodTimesRg-Regular",
                 fontSize: 30,
                 fontWeight: "bold"
             },
@@ -271,7 +271,7 @@ function makeChanges(question){
             left: "10px",
             top: "10px",
             font: {
-                fontFamily: "DIN-Regular",
+                fontFamily: "GoodTimesRg-Regular",
                 fontSize: 30
             },
         });
@@ -378,7 +378,7 @@ function firstToRun(firstMessage){
     var nameTag = Ti.UI.createLabel({
         text: lourencoName,
         font:{
-            fontFamily: "DIN-Regular",
+            fontFamily: "GoodTimesRg-Regular",
             fontSize: 30,
             fontWeight: "bold"
         },
@@ -419,7 +419,7 @@ function firstToRun(firstMessage){
         left: "10px",
         top: "10px",
         font: {
-            fontFamily: "DIN-Regular",
+            fontFamily: "GoodTimesRg-Regular",
             fontSize: 30
         },
     });
